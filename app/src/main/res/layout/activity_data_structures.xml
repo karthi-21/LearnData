@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
@@ -7,33 +8,27 @@
     android:orientation="vertical"
     tools:context=".DataStructures">
 
-    <LinearLayout
-        android:layout_width="match_parent"
-        android:background="@color/colorPrimaryDark"
-        android:layout_height="wrap_content">
-        <!--<com.gigamole.navigationtabstrip.NavigationTabStrip-->
-            <!--android:id="@+id/nts"-->
-            <!--android:layout_marginTop="10dp"-->
-            <!--android:layout_width="match_parent"-->
-            <!--android:layout_height="50dp"-->
-            <!--app:nts_color="#000"-->
-            <!--app:nts_size="15sp"-->
-            <!--app:nts_weight="3dp"-->
-            <!--app:nts_factor="2.5"-->
-            <!--app:nts_titles="@array/titles"-->
-            <!--app:nts_type="point"-->
-            <!--app:nts_gravity="top"-->
-            <!--app:nts_corners_radius="1.5dp"-->
-            <!--app:nts_animation_duration="300"-->
-            <!--app:nts_active_color="#000"-->
-            <!--app:nts_inactive_color="#c4c4c4"/>-->
-    </LinearLayout>
+    <!--<LinearLayout-->
+        <!--android:layout_width="match_parent"-->
+        <!--android:background="@color/colorPrimaryDark"-->
+        <!--android:layout_height="wrap_content">-->
+        <!---->
+    <!--</LinearLayout>-->
 
     <android.support.v4.view.ViewPager
         android:id="@+id/viewpager"
-        android:layout_width="fill_parent"
+        android:layout_width="match_parent"
         android:layout_height="fill_parent"
         />
+    <com.google.android.gms.ads.AdView
+        xmlns:ads="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/adView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentBottom="true"
+        ads:adSize="BANNER"
+        ads:adUnitId="ca-app-pub-4272027379659463/2559000375">
+    </com.google.android.gms.ads.AdView>
 
-
-</LinearLayout>
+</RelativeLayout>

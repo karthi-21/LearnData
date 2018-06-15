@@ -17,10 +17,14 @@ import android.widget.Switch;
 import com.gigamole.navigationtabstrip.NavigationTabStrip;
 import com.github.florent37.materialviewpager.MaterialViewPager;
 import com.github.florent37.materialviewpager.header.HeaderDesign;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 
 public class DataStructures extends FragmentActivity implements ReturnTypeFragment.OnButtonClickListener {
 
     ViewPager mViewPager;
+    private AdView mAdView;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -31,6 +35,12 @@ public class DataStructures extends FragmentActivity implements ReturnTypeFragme
 /** set the adapter for ViewPager */
         mViewPager.setAdapter(new SamplePagerAdapter(
                 getSupportFragmentManager()));
+
+        MobileAds.initialize(this, "ca-app-pub-4272027379659463~3033094350");
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
     }
 
     @Override

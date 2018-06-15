@@ -10,6 +10,9 @@ import android.view.View;
 
 import com.daimajia.androidanimations.library.Techniques;
 import com.daimajia.androidanimations.library.YoYo;
+import com.google.android.gms.ads.AdRequest;
+import com.google.android.gms.ads.AdView;
+import com.google.android.gms.ads.MobileAds;
 import com.special.ResideMenu.ResideMenu;
 import com.special.ResideMenu.ResideMenuItem;
 
@@ -24,6 +27,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private ResideMenuItem itemSettings;
     //private FButton takeBut;
 
+    private AdView mAdView;
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,6 +38,8 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
 
         ActionBar actionbar = getSupportActionBar();
         actionbar.hide();
+
+        MobileAds.initialize(this, "ca-app-pub-4272027379659463~3033094350");
 
         YoYo.with(Techniques.Pulse)
                 .duration(700)
@@ -79,6 +87,11 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
                 resideMenu.openMenu(ResideMenu.DIRECTION_LEFT);
             }
         });
+
+        mAdView = findViewById(R.id.adView);
+        AdRequest adRequest = new AdRequest.Builder().build();
+        mAdView.loadAd(adRequest);
+
 
     }
 
