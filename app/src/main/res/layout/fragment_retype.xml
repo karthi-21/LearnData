@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Return type!"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif-monospace"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="The return type (or result type) defines and constrains the data type of the value returned from a subroutine or method. We have two types in rturing a value."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:text="'void' type"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="This type will never return any value."/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/code1"
+                android:textSize="20dp"
+                android:fontFamily="serif"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:text="'int' type"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="This type must return some value."/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:id="@+id/codeint"
+                android:textSize="20dp"
+                android:fontFamily="serif"
+                android:padding="5dp"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/move"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next ->"/>
+
+    </LinearLayout>
+</ScrollView>
+

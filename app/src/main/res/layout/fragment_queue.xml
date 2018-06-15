@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="QUEUE!"
+            android:textColor="@color/colorPrimaryDark"
+            android:layout_marginTop="20dp"
+            android:textStyle="bold"
+            android:layout_gravity="center_horizontal"
+            android:fontFamily="serif-monospace"
+            android:textSize="30sp"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="Queue is an abstract data structure, somewhat similar to Stacks. Unlike stacks, a queue is open at both its ends. One end is always used to insert data (enqueue) and the other is used to remove data (dequeue). Queue follows First-In-First-Out methodology, i.e., the data item stored first will be accessed first."/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:text="Queue Representation"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="As we now understand that in queue, we access both ends for different reasons. The following diagram given below tries to explain queue representation as data structure."/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/queue_diagram"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:text="Enqueue Operation"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="Queues maintain two data pointers, front and rear. Therefore, its operations are comparatively difficult to implement than that of stacks."/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/queue_enqueue_diagram"/>
+        </android.support.v7.widget.CardView>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/colorPrimaryDark"
+            android:fontFamily="serif-monospace"
+            android:textStyle="bold"
+            android:layout_marginTop="10dp"
+            android:textSize="25sp"
+            android:text="Dequeue Operation"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="18sp"
+            android:fontFamily="serif"
+            android:layout_margin="3dp"
+            android:textColor="@color/colorAccent"
+            android:text="Accessing data from the queue is a process of two tasks − access the data where front is pointing and remove the data after access."/>
+        <android.support.v7.widget.CardView
+            android:layout_margin="10dp"
+            app:cardBackgroundColor="@color/colorAccent"
+            app:cardElevation="5dp"
+            app:cardCornerRadius="5dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:src="@drawable/queue_dequeue_diagram"/>
+        </android.support.v7.widget.CardView>
+
+        <Button
+            android:id="@+id/move1"
+            android:layout_marginBottom="10dp"
+            android:textColor="#fff"
+            android:background="@drawable/buttonstyle"
+            android:layout_marginTop="35dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="next ->"/>
+
+    </LinearLayout>
+</ScrollView>
+

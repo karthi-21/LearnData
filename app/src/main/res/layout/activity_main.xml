@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:fbutton="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/white"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_top">
+
+        <FrameLayout
+            android:layout_width="fill_parent"
+            android:layout_height="70dp">
+
+            <Button
+                android:layout_width="28dp"
+                android:layout_height="28dp"
+                android:background="@drawable/titlebar_menu_selector"
+                android:id="@+id/title_bar_left_menu"
+                android:layout_gravity="left|center_vertical"
+                android:layout_marginLeft="10dp"/>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:fontFamily="serif-monospace"
+                android:text="Learn Code Online"
+                android:textSize="25sp"
+                android:textStyle="bold"
+                android:textColor="@android:color/white"
+                android:layout_gravity="center"/>
+
+        </FrameLayout>
+
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@color/colorPrimaryDark"/>
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:id="@+id/main_fragment">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:orientation="vertical"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/welcome"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Let's begin to learn by swiping right!"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="40dp"
+                    android:textSize="20dp"
+                    android:gravity="center"
+                    android:textColor="@color/colorPrimaryDark"
+                    android:fontFamily="monospace"/>
+
+                <LinearLayout
+                    android:layout_marginTop="30dp"
+                    android:id="@+id/swipe"
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:layout_height="wrap_content">
+                    <ImageView
+                        android:id="@+id/swright"
+                        android:layout_gravity="center"
+                        android:layout_width="100dp"
+                        android:layout_height="100dp"
+                        android:src="@drawable/swleft"/>
+
+                    <TextView
+                        android:id="@+id/swrighttext"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Swipe right"
+                        android:layout_gravity="center"
+                        android:textStyle="bold"
+                        android:fontFamily="casual"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/navMenu"
+                    android:layout_marginTop="50dp"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_height="wrap_content"
+                    android:text="Take me there"
+                    android:padding="10dp"
+                    android:background="@color/colorPrimaryDark"
+                    android:shadowColor="@color/colorAccent"
+                    android:layout_width="wrap_content" />
+
+            </LinearLayout>
+
+
+    </FrameLayout>
+
+</LinearLayout>
